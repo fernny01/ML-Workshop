@@ -1,4 +1,5 @@
 %%writefile app_predit_penguin.py
+
 import numpy as np
 import pandas as pd
 import pickle
@@ -60,4 +61,3 @@ with tab2:
                y =  evaluations.loc['XGBoost'])
     ])
     st.plotly_chart(fig, use_container_width=True)
-
